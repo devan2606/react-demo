@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.company_profile {
+  margin-left: 100px auto;
+  margin-right: 100px auto;
+  margin-top: 70px auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.card-wrap {
+  /* margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 70px;
+     */
+
+  padding: 20px 30px;
+  background: #eef5f6;
+  /* position: relative; */
+}
+
+.section-company-div {
+  padding: 30px 40px 0;
+}
+
+.section-div {
+  padding: 30px 40px 0;
+  background: #fff;
+  border-radius: 15px;
+}
+
+h3.title-font {
+  font-size: 12pt;
+  line-height: 14pt;
+  font-family: "DIN";
+  margin-bottom: 20px;
+}
+
+span.text {
+  font-size: 12pt;
+  line-height: 14pt;
+  font-family: "DIN";
+}
+.table thead tr th strong {
+  font-family: "Helvetica";
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+td span.label {
+  color: #fff !important;
+}
+
+td span.label,
+.table tbody tr td {
+  font-family: "Helvetica";
+  color: #000;
+  font-size: 10pt;
+  line-height: 12pt;
+  padding: 5px;
+  font-weight: 400;
+}
+
+.table#candidate-grid-table tbody tr td:nth-child(2) {
+  padding: 5px 0 !important;
+}
+
+.table#candidate-grid-table tbody tr td {
+  border: 1.5px solid #63c1c5;
+  padding: 0px !important;
+  min-width: 140px;
+  margin: 0px;
+  white-space: pre;
+}
+
+.table#candidate-grid-table thead tr th {
+  border: 1.5px solid #63c1c5;
+  padding: 5px 15px !important;
+}
+table.table-borders {
+  border: 1px solid #eee;
+  border-collapse: initial;
+}
+td.remove {
+  text-align: center;
+  background: #eaeaea;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+td.remove:hover {
+  background: #df5063;
+  color: #fff;
+}
+
+.spiralCards .btn-pink:hover,
+.spiralCards .btn-pink:active,
+.spiralCards .btn-pink:focus,
+.btn-pink:hover,
+.btn-pink:focus,
+.btn-pink:active {
+  background-color: #e4287c !important;
+  color: #fff !important;
+  border-color: #e4287c !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.spiralCards .btn-pink,
+.btn-pink {
+  background-color: #df5063 !important;
+  color: #fff !important;
+  border-color: #df5063 !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  font-family: "Helvetica" !important;
+  letter-spacing: 1px !important;
+  border-radius: 8px !important;
+  min-width: 140px !important;
+}
+
+.card-wrap h1 {
+  color: #63c1c5;
+  font-size: 20pt;
+  line-height: 24pt;
+  letter-spacing: 1pt;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.table-responsive.inset {
+  padding: 31px 0 0;
+}
+.title-font {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.btnpink,
+.btnblue,
+.btngreen {
+  font-weight: bold !important ;
+  color: #ffffff !important;
+  padding: 0.5rem 2rem !important;
+}
+
+.btnpink {
+  background: #ef6298 !important;
+}
+
+.btnblue {
+  background-color: #8a88cd;
+}
+
+.btngreen {
+  background: #52b97f;
+}
+.card-wrap h1.mt-5.mb-2 {
+  font-family: "SegoeUIBlack" !important;
+}
+
+.bootstrap-select:not([className*="col-"]):not([className*="form-control"]):not(.input-group-btn) {
+  width: 60px;
+}
+.bootstrap-select:not(.input-group-btn),
+.bootstrap-select[className*="col-"] {
+  float: none;
+  display: inline-block;
+  margin-left: 0;
+}
+button.btn.btn-light {
+  padding: 8px 12px;
+  display: inline-block;
+  font-size: 10px;
+  box-shadow: 0px 0px 20px -6px;
+}
+
+.form-group.newStyle input {
+  border: 0;
+  border-radius: 0;
+  border-right: none;
+  border-bottom: 1px solid #dadada;
+  font-family: "Helvetica";
+}
+.form-group.newStyle select {
+  font-family: "Helvetica";
+  border: 0;
+  border-bottom: 1px solid #dadada;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 900px) {
+  p.cardDescription {
+    padding: 1px 0px 14px;
+  }
+}
+@media (max-width: 767px) {
+  .form-inline.customForm .form-group {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  p.cardDescription {
+    padding: 1px 0px 14px;
+  }
+}
+
+@media (max-width: 75em) {
+  .offer__heading {
+    padding: 0;
+  }
+}
+@media (max-width: 37.5em) {
+  .offer__heading h1 {
+    white-space: normal;
+  }
+}
+.offer__hint {
+  position: absolute;
+  bottom: -4.5rem;
+  left: 85%;
+}
+.offer__hint img {
+  width: 120%;
+}
+@media (max-width: 75em) {
+  .offer__hint {
+    bottom: -1.5rem;
+    left: 90%;
+  }
+  .offer__hint img {
+    width: 170%;
+  }
+}
+@media (max-width: 56.25em) {
+  .offer__hint {
+    display: none;
+  }
+}
+@media only screen and (max-width: 90em) {
+  .offer {
+    width: 80%;
+  }
+}
+@media (max-width: 37.5em) {
+  .offer {
+    width: 100%;
+    padding: 4rem;
+  }
+}

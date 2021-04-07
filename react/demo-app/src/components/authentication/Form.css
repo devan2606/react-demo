@@ -1,0 +1,234 @@
+img {
+  vertical-align: middle !important;
+  border-style: none !important;
+}
+.wave {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  height: 100% !important;
+  z-index: -1 !important;
+}
+
+.container {
+  width: 100vw !important;
+  height: 100vh !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  grid-gap: 7rem !important;
+  padding: 0 2rem !important;
+  margin-left: 400px !important;
+}
+
+.img {
+  display: flex !important;
+  margin-top: 100px !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+}
+.img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.content {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.img img {
+  width: 500px !important;
+}
+.logo {
+  width: 50px !important;
+}
+form {
+  width: 360px !important;
+}
+
+.content img {
+  height: 100px !important;
+}
+
+.content h2 {
+  margin: 15px 0 !important;
+  color: #333 !important;
+  text-transform: uppercase !important;
+  font-size: 2.9rem !important;
+}
+/* Login form */
+.content .input-div {
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: 7% 93% !important;
+  margin: 25px 0 !important;
+  padding: 5px 0 !important;
+  border-bottom: 2px solid #d9d9d9 !important;
+}
+.content .input-div:hover {
+  border-bottom: 3px solid #63c1c5 !important;
+}
+
+.content .i:hover {
+  color: #63c1c5 !important;
+}
+.content .input-div {
+  margin-top: 0 !important;
+}
+
+.input-div > div {
+  position: relative !important;
+  height: 45px !important;
+}
+
+.input-div > div > input {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  padding: 0.5rem 0.7rem !important;
+  font-size: 1.2rem !important;
+  color: #555 !important;
+  font-family: "poppins", sans-serif !important;
+}
+
+.i {
+  color: #d9d9d9 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 30px !important;
+}
+
+a {
+  color: #999 !important;
+  text-decoration: none !important;
+}
+
+.fpwd {
+  display: block !important;
+  text-align: right !important;
+  text-decoration: none !important;
+  color: #999 !important;
+  font-size: 0.9rem !important;
+  transition: 0.3s !important;
+  float: right !important;
+}
+.signup {
+  display: block !important;
+  text-align: left !important;
+  text-decoration: none !important;
+
+  font-size: 0.9rem !important;
+  transition: 0.4s !important;
+  float: left !important;
+  margin-bottom: 20px !important;
+}
+
+a:hover {
+  color: #63c1c5 !important;
+}
+
+.form-btn {
+  display: block !important;
+  width: 100% !important;
+  height: 50px !important;
+  border-radius: 25px !important;
+  outline: none !important;
+  border: none !important;
+  background-image: linear-gradient(
+    to right,
+    #63c1c5,
+    #63c1c5,
+    #225355
+  ) !important;
+  background-size: 200% !important;
+  font-size: 1.2rem !important;
+  color: #fff !important;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 1rem 0 !important;
+  cursor: pointer;
+  transition: 0.5s !important;
+}
+
+.btn:hover {
+  background-position: right !important;
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    grid-gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  form {
+    width: 290px;
+  }
+
+  .content h2 {
+    font-size: 2.4rem;
+    margin: 8px 0;
+  }
+
+  .img img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  form {
+    width: 210px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .content {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 700px) {
+    .container {
+      grid-template-columns: 0.5fr;
+    }
+
+    .img {
+      display: none;
+    }
+
+    .wave {
+      display: none;
+    }
+
+    .content {
+      justify-content: center;
+    }
+  }
+}
